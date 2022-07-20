@@ -7,8 +7,8 @@
 
 ## Introduction
 
-All the classes we have seen so far have been publicly defined classes that have
-existing in their own files. These class definitions are accessible to anyone
+All the classes we have seen so far have been publicly defined classes and
+exist in their own files. These class definitions are accessible to anyone
 and objects of their type can be instantiated by anyone.
 
 Since classes are data structures that help us group data and behaviors together
@@ -247,10 +247,10 @@ yielding code that is becoming increasingly duplicative, like this:
 ```
 
 The only difference between the code inside the two `if` statements is the
-version of the `getLetterGrade()` and `isPassingGrade()` methods it calls. This
-will need over time to a severe duplication of code in addition to being very
-error prone because we must remember to call exactly the right method for every
-type of grading method we want to use, and make sure this is right in all the
+version of the `getLetterGrade()` and `isPassingGrade()` methods it calls. Over
+time this will lead to severe duplication of code in addition to being very
+error prone. We must remember to call exactly the right method for every
+type of grading method we want to use and make sure this is right in all the
 places where this choice is relevant.
 
 A better approach would be to take advantage of the fact that we want the same
@@ -283,7 +283,6 @@ class FlatCurveGradeCalculator implements GradeCalculator {
 and
 
 ````java
-```java
 class SlightCurveGradeCalculator implements GradeCalculator {
     // ...
 }
