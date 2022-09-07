@@ -22,7 +22,7 @@ ourselves about inner classes.
 Sometimes we want to have a specific set of methods that is only needed by one
 other class. This is where **inner classes** can be useful. Inner classes have
 access to all of its outer class' methods and variables; however, the outer
-class does will not be able to invoke one of the inner class' methods directly
+class will not be able to invoke one of the inner class' methods directly
 without instantiating it first. Let's look at an example here:
 
 ```java
@@ -49,7 +49,7 @@ notice how the inner class can have a `private` access modifier. Most of the
 time, with inner classes, they will be used for relationships that are
 exclusive to the outer class in such a way that the inner class could not even
 exist if it weren't for the outer class. But we also could have attached any of
-the access modifiers to the inner class if we wanted too instead.
+the access modifiers to the inner class if we wanted to instead.
 
 ## Purpose of Inner Classes
 
